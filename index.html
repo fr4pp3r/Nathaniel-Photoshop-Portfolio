@@ -70,15 +70,10 @@
 
       <div class="about-grid">
         <div class="about-photo-col">
-          <div class="about-photo-frame">
-            <div class="about-photo-placeholder">
-              <svg class="placeholder-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="28" r="14" stroke="currentColor" stroke-width="2.5" stroke-dasharray="4 3"/>
-                <path d="M12 68c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="currentColor" stroke-width="2.5" stroke-dasharray="4 3" stroke-linecap="round"/>
-              </svg>
-              <span>Profile Photo</span>
-            </div>
+          <div class="about-photo-frame" id="photoFrame">
+            <img src="profilephoto.jpeg" alt="Nathaniel" class="about-photo" id="profilePhoto" />
             <div class="photo-frame-deco"></div>
+            <div class="photo-click-hint">Click to expand</div>
           </div>
         </div>
 
@@ -299,19 +294,16 @@
         <div class="activity-media">
           <div class="multi-upload-grid three-col">
             <div class="upload-slot">
-              <span class="upload-slot-label">Drop Shadow</span>
               <div class="activity-img-card">
                 <img src="activities/5/LayerStyles1.png" alt="Drop Shadow" class="activity-img" />
               </div>
             </div>
             <div class="upload-slot">
-              <span class="upload-slot-label">Outer Glow</span>
               <div class="activity-img-card">
                 <img src="activities/5/LayerStyles2.png" alt="Outer Glow" class="activity-img" />
               </div>
             </div>
             <div class="upload-slot">
-              <span class="upload-slot-label">Bevel &amp; Emboss</span>
               <div class="activity-img-card">
                 <img src="activities/5/LayerStyles3.png" alt="Bevel and Emboss" class="activity-img" />
               </div>
@@ -353,6 +345,20 @@
       <span class="footer-tech">built with <span class="accent">HTML</span> &amp; <span class="accent">CSS</span></span>
     </div>
   </footer>
+
+  <!-- Photo Modal -->
+  <div class="photo-modal" id="photoModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="modal-content">
+      <img src="profilephoto.jpeg" alt="Nathaniel" class="modal-img" />
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

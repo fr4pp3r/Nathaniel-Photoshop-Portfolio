@@ -69,4 +69,55 @@
 
   sections.forEach(s => sectionObserver.observe(s));
 
+  /* ── Photo Modal ── */
+  const photoFrame = document.getElementById('photoFrame');
+  const profilePhoto = document.getElementById('profilePhoto');
+  const photoModal = document.getElementById('photoModal');
+  const modalBackdrop = document.getElementById('modalBackdrop');
+  const modalClose = document.getElementById('modalClose');
+  const modalImg = document.querySelector('.modal-img');
+
+  // Open modal with specific image
+  const openModal = (imgSrc, imgAlt) => {
+    modalImg.src = imgSrc;
+    modalImg.alt = imgAlt;
+    photoModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Close modal
+  const closeModal = () => {
+    photoModal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  // Profile photo click
+  if (photoFrame) {
+    photoFrame.addEventListener('click', () => {
+      openModal(profilePhoto.src, profilePhoto.alt);
+    });
+  }
+
+  // All activity images click
+  const activityImgCards = document.querySelectorAll('.activity-img-card');
+  activityImgCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const img = card.querySelector('.activity-img');
+      if (img) {
+        openModal(img.src, img.alt);
+      }
+    });
+  });
+
+  // Close modal
+  modalClose.addEventListener('click', closeModal);
+  modalBackdrop.addEventListener('click', closeModal);
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && photoModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
 })();
