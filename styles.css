@@ -587,6 +587,74 @@ button { cursor: pointer; font-family: inherit; }
 }
 .upload-preview:hover .remove-img { opacity: 1; }
 
+/* ── 13a. Multi-upload Grid ── */
+.multi-upload-grid {
+  display: grid;
+  gap: 16px;
+}
+.multi-upload-grid.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+.multi-upload-grid.three-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.upload-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.upload-slot-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(167,139,250,0.1);
+  border: 1px solid rgba(167,139,250,0.2);
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.upload-slot .image-upload-card {
+  aspect-ratio: 1 / 1;
+  flex: 1;
+}
+
+/* ── 13b. Reporter Notice ── */
+.reporter-notice {
+  background: var(--bg-card);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 48px 32px;
+  text-align: center;
+  aspect-ratio: 4/3;
+}
+.reporter-icon {
+  width: 56px;
+  height: 56px;
+  color: var(--accent);
+  opacity: 0.7;
+}
+.reporter-title {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+.reporter-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 280px;
+}
+
 /* ── 13. Contact Section ── */
 .contact-section { background: var(--bg-2); }
 
@@ -674,6 +742,9 @@ button { cursor: pointer; font-family: inherit; }
   .activity-grid.reversed .activity-media {
     order: 1;
   }
+  .multi-upload-grid.three-col {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -695,4 +766,9 @@ button { cursor: pointer; font-family: inherit; }
 
   .hero-title { font-size: 1.8rem; }
   .footer-inner { flex-direction: column; text-align: center; }
+
+  .multi-upload-grid.two-col,
+  .multi-upload-grid.three-col {
+    grid-template-columns: 1fr;
+  }
 }
