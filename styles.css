@@ -622,7 +622,26 @@ button { cursor: pointer; font-family: inherit; }
   flex: 1;
 }
 
-/* ── 13b. Reporter Notice ── */
+/* ── 13b. Static Activity Image Cards ── */
+.activity-img-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+}
+.activity-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.upload-slot .activity-img-card {
+  aspect-ratio: 1 / 1;
+  flex: 1;
+}
+
+/* ── 13c. Reporter Notice ── */
 .reporter-notice {
   background: var(--bg-card);
   border: 2px dashed var(--border);

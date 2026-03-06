@@ -51,59 +51,6 @@
 
   revealEls.forEach(el => revealObserver.observe(el));
 
-  /* ── Image Upload Placeholders ── */
-  document.querySelectorAll('.image-upload-card').forEach(card => {
-    const input      = card.querySelector('.file-input');
-    const inner      = card.querySelector('.upload-inner');
-    const preview    = card.querySelector('.upload-preview');
-    const previewImg = card.querySelector('.preview-img');
-    const removeBtn  = card.querySelector('.remove-img');
-
-    // File input change
-    input.addEventListener('change', () => {
-      const file = input.files[0];
-      if (file) showPreview(file);
-    });
-
-    // Drag & drop
-    card.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      card.classList.add('drag-over');
-    });
-    card.addEventListener('dragleave', () => card.classList.remove('drag-over'));
-    card.addEventListener('drop', (e) => {
-      e.preventDefault();
-      card.classList.remove('drag-over');
-      const file = e.dataTransfer.files[0];
-      if (file && file.type.startsWith('image/')) showPreview(file);
-    });
-
-    // Remove image
-    removeBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      clearPreview();
-    });
-
-    function showPreview(file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        previewImg.src = e.target.result;
-        inner.style.display   = 'none';
-        preview.style.display = 'block';
-        card.classList.add('has-image');
-      };
-      reader.readAsDataURL(file);
-    }
-
-    function clearPreview() {
-      previewImg.src          = '';
-      preview.style.display   = 'none';
-      inner.style.display     = 'flex';
-      card.classList.remove('has-image');
-      input.value = '';
-    }
-  });
-
   /* ── Active nav link highlight on scroll ── */
   const sections = document.querySelectorAll('section[id], header[id]');
   const navAnchors = document.querySelectorAll('.nav-link');
