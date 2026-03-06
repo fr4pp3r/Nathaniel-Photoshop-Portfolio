@@ -125,22 +125,22 @@
 
   <!-- ═══ ACTIVITIES ═══ -->
 
-  <!-- ─ Activity 1: Photo Manipulation ─ -->
+  <!-- ─ Activity 1: Clipping Mask ─ -->
   <section class="section activity-section" id="activity-1" data-index="01">
     <div class="container">
       <div class="section-label">
         <span class="label-index">01</span>
-        <span class="label-text">photo_manipulation/</span>
+        <span class="label-text">clipping_mask/</span>
       </div>
       <div class="activity-grid">
         <div class="activity-info">
-          <h2 class="section-title">Photo <span class="accent">Manipulation</span></h2>
+          <h2 class="section-title">Clipping <span class="accent">Mask</span></h2>
           <p class="activity-desc">
-            Pushing the boundaries of reality through seamless composites, surreal environments, and impossible scenes. Each image is a gateway to another world — blending multiple sources into a single believable narrative.
+            Using clipping masks to confine artwork, textures, or adjustments within the shape of a layer below. A powerful non-destructive technique that keeps designs clean and flexible while adding depth and creativity.
           </p>
           <ul class="activity-meta">
-            <li><span class="meta-key">Tools:</span> Photoshop, Camera RAW</li>
-            <li><span class="meta-key">Skills:</span> Layer masking, blending modes, lighting</li>
+            <li><span class="meta-key">Tools:</span> Photoshop</li>
+            <li><span class="meta-key">Skills:</span> Clipping masks, non-destructive editing, layer management</li>
           </ul>
         </div>
         <div class="activity-media">
@@ -172,44 +172,73 @@
     </div>
   </section>
 
-  <!-- ─ Activity 2: Digital Painting ─ -->
+  <!-- ─ Activity 2: Layer Mask ─ -->
   <section class="section activity-section alt-layout" id="activity-2" data-index="02">
     <div class="container">
       <div class="section-label">
         <span class="label-index">02</span>
-        <span class="label-text">digital_painting/</span>
+        <span class="label-text">layer_mask/</span>
       </div>
       <div class="activity-grid reversed">
         <div class="activity-info">
-          <h2 class="section-title">Digital <span class="accent">Painting</span></h2>
+          <h2 class="section-title">Layer <span class="accent">Mask</span></h2>
           <p class="activity-desc">
-            Creating hand-crafted illustrations entirely within Photoshop — from concept sketches to polished final pieces. Textures, custom brushes, and careful layering bring characters and landscapes to life with depth and emotion.
+            Harnessing the power of layer masks to reveal or hide parts of a layer non-destructively. Black hides, white reveals — a fundamental technique for seamless blending, compositing, and precise edge control.
           </p>
           <ul class="activity-meta">
-            <li><span class="meta-key">Tools:</span> Photoshop, Wacom Tablet</li>
-            <li><span class="meta-key">Skills:</span> Custom brushes, texture painting, digital inking</li>
+            <li><span class="meta-key">Tools:</span> Photoshop</li>
+            <li><span class="meta-key">Skills:</span> Layer masks, non-destructive editing, compositing</li>
           </ul>
         </div>
         <div class="activity-media">
-          <div class="image-upload-card" data-activity="2">
-            <div class="upload-inner">
-              <div class="upload-icon-wrap">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 38l4-12 24-24 8 8-24 24L8 38z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M28 10l8 8" stroke="currentColor" stroke-width="2"/>
-                  <path d="M8 38c2-1 4-3 4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
+          <div class="multi-upload-grid two-col">
+            <div class="upload-slot">
+              <span class="upload-slot-label">Photo 1</span>
+              <div class="image-upload-card" data-activity="2a">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 38l4-12 24-24 8 8-24 24L8 38z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                      <path d="M28 10l8 8" stroke="currentColor" stroke-width="2"/>
+                      <path d="M8 38c2-1 4-3 4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Drop artwork here</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
               </div>
-              <p class="upload-label">Drop your artwork here</p>
-              <p class="upload-hint">PNG / JPG / PSD &bull; up to 20 MB</p>
-              <label class="upload-btn">
-                Browse File
-                <input type="file" accept="image/*" class="file-input" />
-              </label>
             </div>
-            <div class="upload-preview" style="display:none;">
-              <img src="" alt="Preview" class="preview-img" />
-              <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+            <div class="upload-slot">
+              <span class="upload-slot-label">Photo 2</span>
+              <div class="image-upload-card" data-activity="2b">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 38l4-12 24-24 8 8-24 24L8 38z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                      <path d="M28 10l8 8" stroke="currentColor" stroke-width="2"/>
+                      <path d="M8 38c2-1 4-3 4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Drop artwork here</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -217,89 +246,157 @@
     </div>
   </section>
 
-  <!-- ─ Activity 3: Logo Design ─ -->
+  <!-- ─ Activity 3: Selections ─ -->
   <section class="section activity-section" id="activity-3" data-index="03">
     <div class="container">
       <div class="section-label">
         <span class="label-index">03</span>
-        <span class="label-text">logo_design/</span>
+        <span class="label-text">selections/</span>
       </div>
       <div class="activity-grid">
         <div class="activity-info">
-          <h2 class="section-title">Logo <span class="accent">Design</span></h2>
+          <h2 class="section-title"><span class="accent">Selections</span></h2>
           <p class="activity-desc">
-            Building visual identities that speak before words do. Clean, bold, and memorable logos crafted for brands, personal projects, and creative ventures — every mark made with intention.
+            Mastering the art of precise selections in Photoshop — from quick selections and magic wand to refined edge masking for complex subjects like hair and fur. Accurate selections are the foundation of every clean composite and edit.
           </p>
           <ul class="activity-meta">
-            <li><span class="meta-key">Tools:</span> Photoshop, Illustrator</li>
-            <li><span class="meta-key">Skills:</span> Vector shapes, smart objects, brand identity</li>
+            <li><span class="meta-key">Tools:</span> Photoshop</li>
+            <li><span class="meta-key">Skills:</span> Selection tools, Select & Mask, refine edge, quick selection</li>
           </ul>
         </div>
         <div class="activity-media">
-          <div class="image-upload-card" data-activity="3">
-            <div class="upload-inner">
-              <div class="upload-icon-wrap">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <polygon points="24,6 44,38 4,38" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                  <circle cx="24" cy="28" r="3" stroke="currentColor" stroke-width="2"/>
-                  <path d="M24 22v-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <p class="upload-label">Drop your artwork here</p>
-              <p class="upload-hint">PNG / JPG / SVG &bull; up to 20 MB</p>
-              <label class="upload-btn">
-                Browse File
-                <input type="file" accept="image/*" class="file-input" />
-              </label>
+          <div class="reporter-notice">
+            <div class="reporter-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 16v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="30" r="1.5" fill="currentColor"/>
+              </svg>
             </div>
-            <div class="upload-preview" style="display:none;">
-              <img src="" alt="Preview" class="preview-img" />
-              <button class="remove-img" aria-label="Remove image">&#x2715;</button>
-            </div>
+            <p class="reporter-title">Reporter Role</p>
+            <p class="reporter-text">As the reporter for this activity, no photo upload is required. The selections technique is documented and presented verbally.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─ Activity 4: Photo Retouching ─ -->
+  <!-- ─ Activity 4: Blending Modes ─ -->
   <section class="section activity-section alt-layout" id="activity-4" data-index="04">
     <div class="container">
       <div class="section-label">
         <span class="label-index">04</span>
-        <span class="label-text">photo_retouching/</span>
+        <span class="label-text">blending_modes/</span>
       </div>
       <div class="activity-grid reversed">
         <div class="activity-info">
-          <h2 class="section-title">Photo <span class="accent">Retouching</span></h2>
+          <h2 class="section-title">Blending <span class="accent">Modes</span></h2>
           <p class="activity-desc">
-            Enhancing portraits and product shots with surgical precision. Skin retouching, frequency separation, dodging &amp; burning, and natural-looking corrections that elevate the subject without erasing authenticity.
+            Exploring how layers interact through Photoshop's blending modes. Each mode — Soft Light, Overlay, Screen, and Multiply — creates a unique visual effect by altering how pixels combine, unlocking endless creative possibilities.
           </p>
           <ul class="activity-meta">
-            <li><span class="meta-key">Tools:</span> Photoshop, Lightroom</li>
-            <li><span class="meta-key">Skills:</span> Frequency separation, dodge &amp; burn, color correction</li>
+            <li><span class="meta-key">Tools:</span> Photoshop</li>
+            <li><span class="meta-key">Skills:</span> Blending modes, layer interaction, light &amp; shadow control</li>
+            <li><span class="meta-key">Modes:</span> Soft Light, Overlay, Screen, Multiply</li>
           </ul>
         </div>
         <div class="activity-media">
-          <div class="image-upload-card" data-activity="4">
-            <div class="upload-inner">
-              <div class="upload-icon-wrap">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
-                  <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
-                  <path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
+          <div class="multi-upload-grid two-col">
+            <div class="upload-slot">
+              <span class="upload-slot-label">Soft Light</span>
+              <div class="image-upload-card" data-activity="4a">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                      <path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Soft Light</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
               </div>
-              <p class="upload-label">Drop your artwork here</p>
-              <p class="upload-hint">PNG / JPG &bull; up to 20 MB</p>
-              <label class="upload-btn">
-                Browse File
-                <input type="file" accept="image/*" class="file-input" />
-              </label>
             </div>
-            <div class="upload-preview" style="display:none;">
-              <img src="" alt="Preview" class="preview-img" />
-              <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+            <div class="upload-slot">
+              <span class="upload-slot-label">Overlay</span>
+              <div class="image-upload-card" data-activity="4b">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                      <path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Overlay</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
+              </div>
+            </div>
+            <div class="upload-slot">
+              <span class="upload-slot-label">Screen</span>
+              <div class="image-upload-card" data-activity="4c">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                      <path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Screen</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
+              </div>
+            </div>
+            <div class="upload-slot">
+              <span class="upload-slot-label">Multiply</span>
+              <div class="image-upload-card" data-activity="4d">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                      <path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Multiply</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -307,47 +404,107 @@
     </div>
   </section>
 
-  <!-- ─ Activity 5: Color Grading & Compositing ─ -->
+  <!-- ─ Activity 5: Layer Styles ─ -->
   <section class="section activity-section" id="activity-5" data-index="05">
     <div class="container">
       <div class="section-label">
         <span class="label-index">05</span>
-        <span class="label-text">color_grading/</span>
+        <span class="label-text">layer_styles/</span>
       </div>
       <div class="activity-grid">
         <div class="activity-info">
-          <h2 class="section-title">Color Grading &amp; <span class="accent">Compositing</span></h2>
+          <h2 class="section-title">Layer <span class="accent">Styles</span></h2>
           <p class="activity-desc">
-            Unifying scenes with intentional color palettes — cinematic grades, seasonal moods, and cross-image consistency that tie composites together. The final layer that transforms good into unforgettable.
+            Applying Photoshop's Layer Styles to add depth, dimension, and visual flair — from glowing text with Outer Glow to embossed surfaces with Bevel &amp; Emboss and dramatic shadows with Drop Shadow. Each style transforms a flat layer into something extraordinary.
           </p>
           <ul class="activity-meta">
-            <li><span class="meta-key">Tools:</span> Photoshop, Camera RAW, Lightroom</li>
-            <li><span class="meta-key">Skills:</span> LUT application, gradient maps, luminosity masks</li>
+            <li><span class="meta-key">Tools:</span> Photoshop</li>
+            <li><span class="meta-key">Skills:</span> Layer effects, non-destructive styling, fx panel</li>
+            <li><span class="meta-key">Styles:</span> Drop Shadow, Outer Glow, Bevel &amp; Emboss</li>
           </ul>
         </div>
         <div class="activity-media">
-          <div class="image-upload-card" data-activity="5">
-            <div class="upload-inner">
-              <div class="upload-icon-wrap">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="4" y="10" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
-                  <path d="M4 22h40" stroke="currentColor" stroke-width="2"/>
-                  <circle cx="16" cy="16" r="3" fill="currentColor" opacity="0.5"/>
-                  <circle cx="24" cy="16" r="3" fill="currentColor" opacity="0.7"/>
-                  <circle cx="32" cy="16" r="3" fill="currentColor"/>
-                  <path d="M12 30h8M22 30h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
+          <div class="multi-upload-grid three-col">
+            <div class="upload-slot">
+              <span class="upload-slot-label">Drop Shadow</span>
+              <div class="image-upload-card" data-activity="5a">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="4" y="10" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M4 22h40" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="16" cy="16" r="3" fill="currentColor" opacity="0.5"/>
+                      <circle cx="24" cy="16" r="3" fill="currentColor" opacity="0.7"/>
+                      <circle cx="32" cy="16" r="3" fill="currentColor"/>
+                      <path d="M12 30h8M22 30h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Drop Shadow</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
               </div>
-              <p class="upload-label">Drop your artwork here</p>
-              <p class="upload-hint">PNG / JPG / PSD &bull; up to 20 MB</p>
-              <label class="upload-btn">
-                Browse File
-                <input type="file" accept="image/*" class="file-input" />
-              </label>
             </div>
-            <div class="upload-preview" style="display:none;">
-              <img src="" alt="Preview" class="preview-img" />
-              <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+            <div class="upload-slot">
+              <span class="upload-slot-label">Outer Glow</span>
+              <div class="image-upload-card" data-activity="5b">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="4" y="10" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M4 22h40" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="16" cy="16" r="3" fill="currentColor" opacity="0.5"/>
+                      <circle cx="24" cy="16" r="3" fill="currentColor" opacity="0.7"/>
+                      <circle cx="32" cy="16" r="3" fill="currentColor"/>
+                      <path d="M12 30h8M22 30h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Outer Glow</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
+              </div>
+            </div>
+            <div class="upload-slot">
+              <span class="upload-slot-label">Bevel &amp; Emboss</span>
+              <div class="image-upload-card" data-activity="5c">
+                <div class="upload-inner">
+                  <div class="upload-icon-wrap">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="4" y="10" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M4 22h40" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="16" cy="16" r="3" fill="currentColor" opacity="0.5"/>
+                      <circle cx="24" cy="16" r="3" fill="currentColor" opacity="0.7"/>
+                      <circle cx="32" cy="16" r="3" fill="currentColor"/>
+                      <path d="M12 30h8M22 30h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <p class="upload-label">Bevel &amp; Emboss</p>
+                  <p class="upload-hint">PNG / JPG &bull; 20 MB</p>
+                  <label class="upload-btn">
+                    Browse
+                    <input type="file" accept="image/*" class="file-input" />
+                  </label>
+                </div>
+                <div class="upload-preview" style="display:none;">
+                  <img src="" alt="Preview" class="preview-img" />
+                  <button class="remove-img" aria-label="Remove image">&#x2715;</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
