@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me &mdash; Nathaniel</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-prompt">~/nathaniel</span>
+      <span class="nav-cursor blink">█</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link"># home</a></li>
+      <li><a href="index.html#activity-1" class="nav-link"># work</a></li>
+      <li><a href="index.html#contact" class="nav-link"># contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ HERO / HEADER ═══ -->
+  <header class="hero about-hero">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <span>About Me</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line-dim">console.log(</span>
+        <br />
+        <span class="line-accent">"Welcome!"</span>
+        <span class="line-dim">);</span>
+      </h1>
+      <p class="hero-subtitle">
+        Let me introduce myself
+      </p>
+    </div>
+  </header>
+
+  <!-- ═══ ABOUT ME ═══ -->
+  <section class="section about-section" id="about-me">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-index">01</span>
+        <span class="label-text">about_me.json</span>
+      </div>
+
+      <div class="about-content-block">
+        <h2 class="section-title">
+          About <span class="accent">Me</span>
+        </h2>
+        <div class="terminal-block">
+          <div class="terminal-header">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+            <span class="t-file">profile.txt</span>
+          </div>
+          <div class="terminal-body">
+            <p class="t-line">
+              <span class="t-prompt">$</span>
+              I am <span class="accent">Nathaniel Betita</span>, a 3rd-year BSCS student at Palawan State University Narra.
+            </p>
+            <p class="t-line">
+              <span class="t-prompt">$</span>
+              I dream to become a <strong>Game Developer</strong>, combining my passion for technology and creativity to build immersive gaming experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOBBIES ═══ -->
+  <section class="section about-section" id="hobbies">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-index">02</span>
+        <span class="label-text">hobbies.js</span>
+      </div>
+
+      <div class="about-content-block">
+        <h2 class="section-title">
+          My <span class="accent">Hobbies</span>
+        </h2>
+        <div class="terminal-block">
+          <div class="terminal-header">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+            <span class="t-file">hobbies.js</span>
+          </div>
+          <div class="terminal-body">
+            <pre class="code-block"><span class="code-keyword">const</span> hobbies = [
+  {
+    name: <span class="code-string">"Video Games"</span>,
+    icon: <span class="code-string">"🎮"</span>,
+    description: <span class="code-string">"I love playing video games"</span>
+  },
+  {
+    name: <span class="code-string">"Piano"</span>,
+    icon: <span class="code-string">"🎹"</span>,
+    description: <span class="code-string">"I enjoy playing piano"</span>
+  },
+  {
+    name: <span class="code-string">"Anime"</span>,
+    icon: <span class="code-string">"📺"</span>,
+    description: <span class="code-string">"I love watching anime"</span>
+  }
+];</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAVORITE WEBSITES ═══ -->
+  <section class="section about-section" id="fave-websites">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-index">03</span>
+        <span class="label-text">bookmarks.md</span>
+      </div>
+
+      <div class="about-content-block">
+        <h2 class="section-title">
+          Favorite <span class="accent">Websites</span>
+        </h2>
+        <div class="terminal-block">
+          <div class="terminal-header">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+            <span class="t-file">bookmarks.md</span>
+          </div>
+          <div class="terminal-body">
+            <div class="website-links">
+              <a href="https://facebook.com" target="_blank" class="website-card">
+                <div class="website-icon">📘</div>
+                <div class="website-info">
+                  <h3>Facebook</h3>
+                  <p>Social networking & connection</p>
+                </div>
+              </a>
+              <a href="https://youtube.com" target="_blank" class="website-card">
+                <div class="website-icon">▶️</div>
+                <div class="website-info">
+                  <h3>YouTube</h3>
+                  <p>Video streaming & entertainment</p>
+                </div>
+              </a>
+              <a href="https://store.steampowered.com" target="_blank" class="website-card">
+                <div class="website-icon">🎮</div>
+                <div class="website-info">
+                  <h3>Steam</h3>
+                  <p>Gaming platform & community</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT CTA ═══ -->
+  <section class="section cta-section" id="contact-cta">
+    <div class="container">
+      <div class="cta-block">
+        <div class="cta-content">
+          <h2 class="cta-title">
+            <span class="line-dim">Let's</span> <span class="accent">Connect</span>
+          </h2>
+          <p class="cta-text">
+            Have a question or want to collaborate? Feel free to reach out!
+          </p>
+          <a href="mailto:nathanielbetita83@gmail.com" class="btn btn-primary btn-lg">
+            <span>✉️</span> Contact Me
+          </a>
+        </div>
+        <div class="cta-decoration">
+          <div class="code-snippet">
+            <pre><span class="code-comment">// Get in touch</span>
+<span class="code-keyword">function</span> <span class="code-function">contact</span>() {
+  <span class="code-keyword">const</span> email = <span class="code-string">"nathanielbetita83@gmail.com"</span>;
+  <span class="code-keyword">return</span> { email };
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Nathaniel Betita. All rights reserved.</p>
+        <p class="footer-code">
+          <span class="code-dim">// built with</span> 
+          <span class="accent">passion</span> 
+          <span class="code-dim">&amp;</span> 
+          <span class="accent">pixels</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
