@@ -1027,6 +1027,8 @@ button { cursor: pointer; font-family: inherit; }
   font-size: 0.9rem;
   line-height: 1.8;
   color: var(--text);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .code-keyword {
